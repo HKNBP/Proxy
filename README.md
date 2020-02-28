@@ -1,30 +1,19 @@
-# proxy
-> HTTP请求代理，CORS跨域请求，HTTPS支持
+# Proxy
+> HTTP請求代理，CORS跨域請求，HTTPS支持
 
 ### 作用
-- 支持跨域请求（转换不支持跨域请求的接口），可直接发起 ajax、fetch
-- 支持HTTPS（解决远程数据接口不支持HTTPS）
-
-### 接口
-- https://netnr-proxy.cloudno.de/{URL}
-
-### 使用
-- <https://netnr-proxy.cloudno.de/https://api.github.com>
-- <https://netnr-proxy.cloudno.de/http://nginx.org/download/nginx-1.16.1.tar.gz>
-
-> 拷贝到控制台运行
-```js
-var $url = "http://wthrcdn.etouch.cn/weather_mini?citykey=101040100";
-fetch("https://netnr-proxy.cloudno.de/" + $url).then(x => x.text()).then(console.log)
-```
-
-### 安装
-- `npm install`
-- `node server`
+- 支持跨域請求（轉換不支持跨域請求的接口），可直接發起 ajax、fetch
+- 支持HTTPS（解決遠程數據接口不支持HTTPS）
 
 ### Fork
 - <https://github.com/Rob--W/cors-anywhere/>
-
-### Source
 - <https://github.com/netnr/proxy>
-- <https://gitee.com/netnr/proxy>
+
+
+>### Note
+>#### 使用方法
+> https://hknbp-proxy.hknbp.org/{URL}
+
+>#### Setup Server
+> `npm install`
+> `node server`
